@@ -1,0 +1,9 @@
+initiatePayment({ /* transaction data */ })
+  .then(response => {
+      console.log('Payment initiated successfully');
+      // Update UI
+  })
+  .catch(error => {
+      console.error('Error initiating payment:', error);
+      // Show error message
+  });
