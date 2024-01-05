@@ -1,0 +1,5 @@
+mkdir AmanWeb5JsApp
+cd AmanWeb5JsApp
+mkdir src
+touch src/index.html
+touch src/app.js
