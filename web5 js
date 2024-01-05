@@ -1,0 +1,16 @@
+// src/app.js
+async function initiatePayment(transactionData) {
+  const response = await fetch('https://your-server.com/initiate-payment', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(transactionData)
+  });
+  
+  if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  return await response.json();
+}
